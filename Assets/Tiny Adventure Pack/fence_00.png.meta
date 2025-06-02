@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e744537f7e9862440a35359f4bb6a394
+guid: 2f9582a235999da4da944723f6c55d75
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,96 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Char2_idle_left_0
+      name: fence_00_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b87dffe61825f2340a0b35c814bd59e6
-      internalID: -2100746145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char2_idle_left_1
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 0
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97feba8d48284394197c3949e8cb65c6
-      internalID: 1033529090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char2_idle_left_2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e95a0172c23cba14384faabd87a89330
-      internalID: 2056613333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char2_idle_left_3
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 0
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 591c87ca9836b934987f7d11c0b30270
-      internalID: 2063352817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char2_idle_left_4
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 0
-        width: 10
+        x: 25
+        y: 16
+        width: 7
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23f52b3c66b1d744195d44d6084fe341
-      internalID: 998537865
+      spriteID: aa0d0b79c86816a47a9909a69d7a21c4
+      internalID: 1698081124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Char2_idle_left_5
+      name: fence_00_1
       rect:
         serializedVersion: 2
-        x: 83
+        x: 41
         y: 0
-        width: 10
-        height: 16
+        width: 7
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +152,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55f2b8647572a3b4fb53fc08aee1c5b7
-      internalID: -963978537
+      spriteID: 1339f1cfe26c5834389073df9b73aa74
+      internalID: -114141539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_00_2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbceb116930962488ee0bacab0dd75c
+      internalID: -1659861266
       vertices: []
       indices: 
       edges: []
@@ -253,12 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Char2_idle_left_0: -2100746145
-      Char2_idle_left_1: 1033529090
-      Char2_idle_left_2: 2056613333
-      Char2_idle_left_3: 2063352817
-      Char2_idle_left_4: 998537865
-      Char2_idle_left_5: -963978537
+      fence_00_0: 1698081124
+      fence_00_1: -114141539
+      fence_00_2: -1659861266
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
