@@ -3,47 +3,44 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
-    public bool isPaused;
-    public GameObject pauseMenu; // Assign panel PauseMenu dari Canvas
+    [Header("Assign Panel dari Canvas (Pause > menupause > Panel)")]
+    public GameObject pauseMenu;
+
+    private bool isPaused = false;
 
     void Start()
     {
-        pauseMenu.SetActive(false);
+        if (pauseMenu != null)
+        {
+            pauseMenu.SetActive(false);
+        }
         Time.timeScale = 1f;
     }
 
     public void TogglePause()
     {
+        if (pauseMenu == null)
+        {
+            Debug.LogWarning("Pause Menu belum di-assign di inspector!");
+            return;
+        }
+
         isPaused = !isPaused;
 
-        if (isPaused)
-        {
-            Time.timeScale = 0f;
-            pauseMenu.SetActive(true);
-        }
-        else
-        {
-            Time.timeScale = 1f;
-            pauseMenu.SetActive(false);
-        }
+        pauseMenu.SetActive(isPaused);
+        Time.timeScale = isPaused ? 0f : 1f;
     }
 
     public void ResumeGame()
     {
+        if (pauseMenu != null) pauseMenu.SetActive(false);
         isPaused = false;
         Time.timeScale = 1f;
-        pauseMenu.SetActive(false);
     }
 
     public void GoToHome()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu"); // ganti sesuai nama scene
-    }
-
-    public void GoToLevel()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Level2"); // ganti sesuai nama scene
+        SceneManager.LoadScene("mainmenu"); // Ganti dengan nama scene kamu
     }
 }
