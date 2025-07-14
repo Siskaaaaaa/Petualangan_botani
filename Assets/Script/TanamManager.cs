@@ -8,8 +8,16 @@ public class TanamManager : MonoBehaviour
     public TileBase tileTanaman;         // Tile tanaman (misalnya pohon)
     public Transform player;             // Objek player
 
-    public int poin = 0;                 // Skor
+    public int poin = 10;                 // Skor lokal (opsional)
     public TMP_Text teksPoin;            // UI skor (TextMeshPro)
+
+    private GameTimer gameTimer;         // Referensi ke GameTimer
+
+    void Start()
+    {
+        // Cari script GameTimer di scene
+        gameTimer = FindObjectOfType<GameTimer>();
+    }
 
     // Fungsi saat tombol Tanam ditekan
     public void KlikTanam()
@@ -40,6 +48,12 @@ public class TanamManager : MonoBehaviour
 
             poin += 1;
             teksPoin.text = "Poin: " + poin;
+
+            // Tambah poin ke GameTimer
+            if (gameTimer != null)
+            {
+                gameTimer.TambahPoint(1);
+            }
         }
         else
         {

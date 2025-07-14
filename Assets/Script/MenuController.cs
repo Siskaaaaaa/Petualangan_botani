@@ -19,7 +19,16 @@ public class MenuController : MonoBehaviour
     // Dipanggil dari Button "Keluar"
     public void KeluarAplikasi()
     {
-        Application.Quit(); // Keluar dari aplikasi (berfungsi saat di-build)
-        Debug.Log("Aplikasi keluar."); // Untuk memastikan di Editor (tidak akan menutup Editor)
+        Application.Quit(); // Keluar dari aplikasi saat build
+        Debug.Log("Aplikasi keluar."); // Untuk debugging di Editor
+    }
+
+    // Dipanggil dari Button "X (Close)" di dalam panel level
+    public void TutupPanelLevel()
+    {
+        if (menuLevelsPanel != null)
+        {
+            menuLevelsPanel.SetActive(false);
+        }
     }
 }
